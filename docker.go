@@ -185,7 +185,6 @@ func commandInfo() *exec.Cmd {
 func commandBuild(build Build) *exec.Cmd {
 	args := []string{
 		"build",
-		"--rm=true",
 		"-f", build.Dockerfile,
 		"-t", build.Name,
 	}
